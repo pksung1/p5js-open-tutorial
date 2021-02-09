@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+</head>
+<body>
+    <script>
+        function setup () {
+            createCanvas(windowWidth, windowHeight);
+            background(220)
+            fill('red')
+            circle(30, 30, 20);
+            fill('blue')
+            strokeWeight(10)
+            stroke('red')
+            circle(50, 50, 20);
+            fill('#aa33dd')
+            strokeWeight(1)
+            point(100, 100);
+            point(200, 200);
+            noFill() // 배경색이 없는 투명
+            rect(100, 100, 100, 50, 10, 100);
+            fill('rgba(23,55,233, 0.3)')
+            // fill(23, 55, 233, 0.3)
+            rect(10, 10, 100)
+            
+            stroke('blue')
+        }
+
+        let i = 0;
+        let pressing = false
+        function draw () {
+            if (mouseIsPressed) {
+                if (!pressing) {
+                    pressing = true
+                }
+                circle(mouseX + random(-10, 10) + 30, mouseY  + 30 + random(-10, 10), random(100))
+                circle(mouseX + random(-10, 10) - 30, mouseY  + 30 + random(-10, 10), random(100))
+                circle(mouseX + random(-10, 10) + 30, mouseY  - 30 + random(-10, 10), random(100))
+                circle(mouseX + random(-10, 10) - 30, mouseY  - 30 + random(-10, 10), random(100))
+            } else {
+                circle(mouseX + random(-10, 10), mouseY + random(-10, 10), random(100))
+                pressing = false
+            }
+            
+            i += random(10)
+        }
+
+        function mousePressed  () {
+            background('gray')
+        }
+    </script>
+</body>
+</html>
