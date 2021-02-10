@@ -6,6 +6,11 @@
 https://www.youtube.com/watch?v=THe8g-l-cuc
 
 
+# 개인 제출물
+
+[폭죽놀이](https://pksung1.github.io/p5js-open-tutorial/)
+
+
 ---
 
 [p5.js CDN](https://cdnjs.com/libraries/p5.js)
@@ -21,9 +26,4 @@ p5js에서 가장 먼저 실행되는 함수는 setup
 화면의 좌측상단부터 (canvas의 좌측상단) 0,0 위치이다.
 
 css로 따지면 postion absolute느낌?
-
-
-# 개인 제출물
-
-[폭죽놀이](https://pksung1.github.io/p5js-open-tutorial/)
 
